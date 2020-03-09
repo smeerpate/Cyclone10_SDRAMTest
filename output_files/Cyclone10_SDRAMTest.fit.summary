@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Mar 09 23:30:18 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Cyclone10_SDRAMTest
+Top-level Entity Name : top
+Family : Cyclone 10 LP
+Device : 10CL016YU484C8G
+Timing Models : Final
+Total logic elements : 6,896 / 15,408 ( 45 % )
+    Total combinational functions : 3,522 / 15,408 ( 23 % )
+    Dedicated logic registers : 5,604 / 15,408 ( 36 % )
+Total registers : 5673
+Total pins : 54 / 341 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 229,376 / 516,096 ( 44 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

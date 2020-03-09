@@ -1,0 +1,115 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Users\Frederic\IntelFPGA\Sources\Cyclone10_SDRAMTest\controller.qsys --block-symbol-file --output-directory=D:\Users\Frederic\IntelFPGA\Sources\Cyclone10_SDRAMTest\controller --family="Cyclone 10 LP" --part=10CL016YU484C8G
+Progress: Loading Cyclone10_SDRAMTest/controller.qsys
+Progress: Reading input file
+Progress: Adding W9825G6KH_SDRAMController_100MHz_CL3_0 [W9825G6KH_SDRAMController_100MHz_CL3 1.0]
+Progress: Parameterizing module W9825G6KH_SDRAMController_100MHz_CL3_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: controller.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Users\Frederic\IntelFPGA\Sources\Cyclone10_SDRAMTest\controller.qsys --synthesis=VERILOG --output-directory=D:\Users\Frederic\IntelFPGA\Sources\Cyclone10_SDRAMTest\controller\synthesis --family="Cyclone 10 LP" --part=10CL016YU484C8G
+Progress: Loading Cyclone10_SDRAMTest/controller.qsys
+Progress: Reading input file
+Progress: Adding W9825G6KH_SDRAMController_100MHz_CL3_0 [W9825G6KH_SDRAMController_100MHz_CL3 1.0]
+Progress: Parameterizing module W9825G6KH_SDRAMController_100MHz_CL3_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: controller.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: controller: Generating controller "controller" for QUARTUS_SYNTH
+Info: W9825G6KH_SDRAMController_100MHz_CL3_0: "controller" instantiated W9825G6KH_SDRAMController_100MHz_CL3 "W9825G6KH_SDRAMController_100MHz_CL3_0"
+Info: jtag_uart_0: Starting RTL generation for module 'controller_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=controller_jtag_uart_0 --dir=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0004_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0004_jtag_uart_0_gen//controller_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'controller_jtag_uart_0'
+Info: jtag_uart_0: "controller" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "controller" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'controller_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=controller_onchip_memory2_0 --dir=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0005_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0005_onchip_memory2_0_gen//controller_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'controller_onchip_memory2_0'
+Info: onchip_memory2_0: "controller" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pio_0: Starting RTL generation for module 'controller_pio_0'
+Info: pio_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=controller_pio_0 --dir=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0006_pio_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0006_pio_0_gen//controller_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'controller_pio_0'
+Info: pio_0: "controller" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "controller" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "controller" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "controller" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'controller_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=controller_nios2_gen2_0_cpu --dir=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0009_cpu_gen/ --quartus_bindir=D:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/TWENTY~1/AppData/Local/Temp/alt8330_8372752683464759011.dir/0009_cpu_gen//controller_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.03.09 21:56:37 (*) Starting Nios II generation
+Info: cpu: # 2020.03.09 21:56:37 (*)   Checking for plaintext license.
+Info: cpu: # 2020.03.09 21:56:37 (*)   Couldn't query license setup in Quartus directory D:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2020.03.09 21:56:37 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.03.09 21:56:37 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.03.09 21:56:37 (*)   Plaintext license not found.
+Info: cpu: # 2020.03.09 21:56:37 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2020.03.09 21:56:37 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.03.09 21:56:37 (*)   Creating all objects for CPU
+Info: cpu: # 2020.03.09 21:56:38 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.03.09 21:56:38 (*)   Creating plain-text RTL
+Info: cpu: # 2020.03.09 21:56:39 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'controller_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: W9825G6KH_SDRAMController_100MHz_CL3_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "W9825G6KH_SDRAMController_100MHz_CL3_0_avalon_slave_0_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file D:/Users/Frederic/IntelFPGA/Sources/Cyclone10_SDRAMTest/controller/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/Users/Frederic/IntelFPGA/Sources/Cyclone10_SDRAMTest/controller/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/Users/Frederic/IntelFPGA/Sources/Cyclone10_SDRAMTest/controller/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: W9825G6KH_SDRAMController_100MHz_CL3_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "W9825G6KH_SDRAMController_100MHz_CL3_0_avalon_slave_0_rsp_width_adapter"
+Info: Reusing file D:/Users/Frederic/IntelFPGA/Sources/Cyclone10_SDRAMTest/controller/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/Users/Frederic/IntelFPGA/Sources/Cyclone10_SDRAMTest/controller/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: controller: Done "controller" with 33 modules, 55 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

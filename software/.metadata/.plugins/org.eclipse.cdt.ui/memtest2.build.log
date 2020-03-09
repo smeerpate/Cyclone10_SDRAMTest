@@ -1,0 +1,9 @@
+23:45:28 **** Incremental Build of configuration Nios II for project memtest2 ****
+make all 
+Info: Building ../memtest2_bsp/
+D:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../memtest2_bsp/
+[BSP build complete]
+[memtest2 build complete]
+
+23:45:29 Build Finished (took 944ms)
+

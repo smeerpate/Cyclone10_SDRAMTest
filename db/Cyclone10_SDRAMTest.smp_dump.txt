@@ -1,0 +1,44 @@
+
+State Machine - |top|controller:u0|controller_nios2_gen2_0:nios2_gen2_0|controller_nios2_gen2_0_cpu:cpu|controller_nios2_gen2_0_cpu_nios2_oci:the_controller_nios2_gen2_0_cpu_nios2_oci|controller_nios2_gen2_0_cpu_debug_slave_wrapper:the_controller_nios2_gen2_0_cpu_debug_slave_wrapper|controller_nios2_gen2_0_cpu_debug_slave_tck:the_controller_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |top|controller:u0|W9825G6KH_SDRAMController_100MHz_CL3:w9825g6kh_sdramcontroller_100mhz_cl3_0|m_next
+Name m_next.MAIN_AUTO_REFRESH m_next.MAIN_WRITE m_next.MAIN_READ m_next.MAIN_IDLE 
+m_next.MAIN_IDLE 0 0 0 0 
+m_next.MAIN_READ 0 0 1 1 
+m_next.MAIN_WRITE 0 1 0 1 
+m_next.MAIN_AUTO_REFRESH 1 0 0 1 
+
+State Machine - |top|controller:u0|W9825G6KH_SDRAMController_100MHz_CL3:w9825g6kh_sdramcontroller_100mhz_cl3_0|m_state
+Name m_state.MAIN_SPIN_OFF_READ_WRITE_CYCLE m_state.MAIN_AUTO_REFRESH m_state.MAIN_BANK_CLOSE_ALL m_state.MAIN_PREPARE_BANK_CLOSE_ALL m_state.MAIN_WRITE m_state.MAIN_READ m_state.MAIN_WAIT_UNTIL_SAFE m_state.MAIN_BANK_ACTIVATE m_state.MAIN_IDLE 
+m_state.MAIN_IDLE 0 0 0 0 0 0 0 0 0 
+m_state.MAIN_BANK_ACTIVATE 0 0 0 0 0 0 0 1 1 
+m_state.MAIN_WAIT_UNTIL_SAFE 0 0 0 0 0 0 1 0 1 
+m_state.MAIN_READ 0 0 0 0 0 1 0 0 1 
+m_state.MAIN_WRITE 0 0 0 0 1 0 0 0 1 
+m_state.MAIN_PREPARE_BANK_CLOSE_ALL 0 0 0 1 0 0 0 0 1 
+m_state.MAIN_BANK_CLOSE_ALL 0 0 1 0 0 0 0 0 1 
+m_state.MAIN_AUTO_REFRESH 0 1 0 0 0 0 0 0 1 
+m_state.MAIN_SPIN_OFF_READ_WRITE_CYCLE 1 0 0 0 0 0 0 0 1 
+
+State Machine - |top|controller:u0|W9825G6KH_SDRAMController_100MHz_CL3:w9825g6kh_sdramcontroller_100mhz_cl3_0|i_next
+Name i_next.INIT_MODE_REGISTER_SET i_next.INIT_TERMINATED i_next.INIT_AUTOREFRESH i_next.INIT_POWERUP 
+i_next.INIT_POWERUP 0 0 0 0 
+i_next.INIT_AUTOREFRESH 0 0 1 1 
+i_next.INIT_TERMINATED 0 1 0 1 
+i_next.INIT_MODE_REGISTER_SET 1 0 0 1 
+
+State Machine - |top|controller:u0|W9825G6KH_SDRAMController_100MHz_CL3:w9825g6kh_sdramcontroller_100mhz_cl3_0|i_state
+Name i_state.INIT_MODE_REGISTER_SET i_state.INIT_TERMINATED i_state.INIT_WAIT_UNTIL_SAFE i_state.INIT_AUTOREFRESH i_state.INIT_PRECHARGE i_state.INIT_POWERUP 
+i_state.INIT_POWERUP 0 0 0 0 0 0 
+i_state.INIT_PRECHARGE 0 0 0 0 1 1 
+i_state.INIT_AUTOREFRESH 0 0 0 1 0 1 
+i_state.INIT_WAIT_UNTIL_SAFE 0 0 1 0 0 1 
+i_state.INIT_TERMINATED 0 1 0 0 0 1 
+i_state.INIT_MODE_REGISTER_SET 1 0 0 0 0 1 

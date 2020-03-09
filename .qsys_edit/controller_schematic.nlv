@@ -1,0 +1,22 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst controller.nios2_gen2_0.clock_bridge -pg 1
+preplace inst controller.nios2_gen2_0.reset_bridge -pg 1
+preplace inst controller.nios2_gen2_0.cpu -pg 1
+preplace inst controller.new_sdram_controller_0 -pg 1 -lvl 3 -y 30
+preplace inst controller -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst controller.jtag_uart_0 -pg 1 -lvl 3 -y 200
+preplace inst controller.pio_0 -pg 1 -lvl 3 -y 380
+preplace inst controller.clk_0 -pg 1 -lvl 1 -y 100
+preplace inst controller.onchip_memory2_0 -pg 1 -lvl 3 -y 300
+preplace inst controller.nios2_gen2_0 -pg 1 -lvl 2 -y 120
+preplace netloc EXPORT<net_container>controller</net_container>(SLAVE)controller.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>controller</net_container>(SLAVE)controller.new_sdram_controller_0_wire,(SLAVE)new_sdram_controller_0.wire) 1 0 3 NJ 40 NJ 40 NJ
+preplace netloc INTERCONNECT<net_container>controller</net_container>(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)jtag_uart_0.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)new_sdram_controller_0.reset,(SLAVE)pio_0.reset,(SLAVE)onchip_memory2_0.reset1,(MASTER)clk_0.clk_reset) 1 1 2 410 80 830
+preplace netloc FAN_OUT<net_container>controller</net_container>(SLAVE)onchip_memory2_0.clk1,(SLAVE)jtag_uart_0.clk,(MASTER)clk_0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)pio_0.clk,(SLAVE)new_sdram_controller_0.clk) 1 1 2 390 60 810
+preplace netloc EXPORT<net_container>controller</net_container>(SLAVE)controller.pio_0_external_connection,(SLAVE)pio_0.external_connection) 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc INTERCONNECT<net_container>controller</net_container>(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)pio_0.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)new_sdram_controller_0.s1,(MASTER)nios2_gen2_0.data_master,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)nios2_gen2_0.debug_mem_slave) 1 1 2 430 430 850
+preplace netloc EXPORT<net_container>controller</net_container>(SLAVE)clk_0.clk_in,(SLAVE)controller.clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>controller</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)jtag_uart_0.irq) 1 2 1 790
+levelinfo -pg 1 0 180 1100
+levelinfo -hier controller 190 220 550 940 1090

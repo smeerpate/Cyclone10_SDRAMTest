@@ -1,0 +1,9 @@
+14:16:03 **** Incremental Build of configuration Nios II for project hallo4 ****
+make all 
+Info: Building ../hallo4_bsp/
+D:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hallo4_bsp/
+[BSP build complete]
+[hallo4 build complete]
+
+14:16:04 Build Finished (took 871ms)
+

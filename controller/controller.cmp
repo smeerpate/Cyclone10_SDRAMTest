@@ -1,0 +1,17 @@
+	component controller is
+		port (
+			clk_clk                                                        : in    std_logic                     := 'X';             -- clk
+			pio_0_external_connection_export                               : out   std_logic;                                        -- export
+			reset_reset_n                                                  : in    std_logic                     := 'X';             -- reset_n
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_addr  : out   std_logic_vector(12 downto 0);                    -- sdram_addr
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_ba    : out   std_logic_vector(1 downto 0);                     -- sdram_ba
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_cas_n : out   std_logic;                                        -- sdram_cas_n
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_cke   : out   std_logic;                                        -- sdram_cke
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_cs_n  : out   std_logic;                                        -- sdram_cs_n
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_dq    : inout std_logic_vector(15 downto 0) := (others => 'X'); -- sdram_dq
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_dqm   : out   std_logic_vector(1 downto 0);                     -- sdram_dqm
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_ras_n : out   std_logic;                                        -- sdram_ras_n
+			w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_we_n  : out   std_logic                                         -- sdram_we_n
+		);
+	end component controller;
+
