@@ -1,5 +1,5 @@
 IP Upgrade report for Cyclone10_SDRAMTest
-Mon Mar 09 18:37:42 2020
+Tue Mar 10 11:46:42 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -34,7 +34,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; IP Upgrade Summary                                                         ;
 +------------------------------+---------------------------------------------+
-; IP Components Upgrade Status ; Failed - Mon Mar 09 18:37:42 2020           ;
+; IP Components Upgrade Status ; Failed - Tue Mar 10 11:46:42 2020           ;
 ; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                ; Cyclone10_SDRAMTest                         ;
 ; Top-level Entity Name        ; top                                         ;
@@ -48,8 +48,8 @@ refer to the applicable agreement for further details.
 Info (23030): Evaluation of Tcl script d:/intelfpga_lite/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Mon Mar 09 18:37:42 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Tue Mar 10 11:46:42 2020
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 

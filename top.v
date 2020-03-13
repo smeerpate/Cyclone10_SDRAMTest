@@ -21,9 +21,8 @@ module top
    output         DRAM_CLK
 );
 
-wire clk100;
-wire clk100_g;
-//assign DRAM_CLK = clk100_g;
+wire clk150;
+wire clk150_g;
 
 /*
 De sdram controller moet elke rij van elke bank gerefreshed hebben in 64ms.
@@ -31,7 +30,7 @@ Dus 8192 (=2^13) refresh cycli in (max) 64ms. Dat is één refreshcyclus elke 7.
 Als we nu veilighedshalve 50ms nemen dan komt dat op één refreshcyclus elke 6.1µs.
 */
    controller u0 (
-      .clk_clk                                                          (clk100_g),
+      .clk_clk                                                          (clk150_g),
       .w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_addr    (DRAM_ADDR),
       .w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_ba      (DRAM_BA),
       .w9825g6kh_sdramcontroller_100mhz_cl3_0_conduit_end_sdram_cas_n   (DRAM_CAS_N),
@@ -50,19 +49,19 @@ Als we nu veilighedshalve 50ms nemen dan komt dat op één refreshcyclus elke 6.
 // misschien moet ik hier een aparte uitgang nemen voor de SRAM
 pll0  pll0_inst (
    .inclk0 ( CLOCK_50 ),
-   .c0 ( clk100 ),
-   .c1 (DRAM_CLK) // DRAM clock is shifted 5ns from clk100.
+   .c0 ( clk150 ),
+   .c1 (DRAM_CLK) // DRAM clock is shifted 5ns from clk150.
    );
    
 c10_clkctrl c10_clkctrl_inst (
-      .inclk  (clk100),
-      .outclk (clk100_g)
+      .inclk  (clk150),
+      .outclk (clk150_g)
    );
    
 smg_interface smg_interface_inst(
       .CLK( CLOCK_50 ),
       .RSTn( RESET_N ),
-      .Number_Sig( USER_PB ? 12'h022 : 12'h000 ),
+      .Number_Sig( USER_PB ? 12'h025 : 12'h000 ),
       .SMG_Data( SMG_Data ),
       .Scan_Sig( Scan_Sig )
    );
